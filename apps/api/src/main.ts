@@ -29,9 +29,9 @@ async function bootstrap() {
 
   // Swagger documentation
   const config = new DocumentBuilder()
-    .setTitle('SerenaGreen API')
+    .setTitle('DTB Kenya API')
     .setDescription(
-      'Unified API for site management, rasters, and vectors. Migrated from 3-database microservices to single-database monolith.',
+      'DTB Kenya Tree Planting Initiative - API for site management, rasters, and vectors.',
     )
     .setVersion('1.0.0')
     .addBearerAuth(
@@ -55,7 +55,7 @@ async function bootstrap() {
 
   const port = process.env.PORT || 3000;
   await app.listen(port);
-  console.log(`✓ SerenaGreen API running on http://localhost:${port}`);
+  console.log(`✓ DTB Kenya API running on http://localhost:${port}`);
   console.log(`✓ API Documentation available at http://localhost:${port}/api/docs`);
 }
 
